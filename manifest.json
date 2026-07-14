@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Shopify Theme Exporter",
+  "version": "1.0.0",
+  "description": "Securely extract 100% original Liquid, JSON, and Assets directly from your active session.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://admin.shopify.com/*",
+    "https://*.myshopify.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

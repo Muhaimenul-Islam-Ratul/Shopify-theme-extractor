@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify Theme Exporter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="bg-glow"></div>
+  
+  <div class="app-container">
+    <header class="header">
+      <div class="logo">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary);">
+          <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+          <line x1="7" y1="7" x2="7.01" y2="7"></line>
+        </svg>
+      </div>
+      <div class="header-text">
+        <h1 class="title">Theme Exporter</h1>
+        <span class="subtitle">Original Source API</span>
+      </div>
+    </header>
+
+    <div class="panel fade-in">
+      <div class="desc">
+        Securely extract <strong>100% original</strong> Liquid, JSON, and Assets directly from your active session.
+      </div>
+      
+      <div class="input-group fade-in" id="themeSelectorDiv" style="display: flex; animation-delay: 0.1s;">
+        <label class="label">TARGET THEME</label>
+        <div class="select-wrapper">
+          <select id="themeSelect">
+            <option value="" disabled selected>Detecting shop store...</option>
+          </select>
+          <div class="arrow-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="loadThemesBtn" class="btn btn-secondary fade-in" style="animation-delay: 0.1s; display: none;" disabled="">
+      <div id="loadThemesSpinner" class="spinner" style="display: block; position: absolute;"></div>
+      <div class="btn-content" id="loadContent" style="opacity: 0;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+        </svg>
+        <span id="loadThemesText">Scan For Themes</span>
+      </div>
+    </button>
+
+    <button id="exportBtn" class="btn btn-primary fade-in" style="display: flex; animation-delay: 0.2s;" disabled="">
+      <div id="btnSpinner" class="spinner" style="display: block; position: absolute;"></div>
+      <div class="btn-content" id="exportContent" style="opacity: 0;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <span id="btnText">Download Archive</span>
+      </div>
+    </button>
+
+    <div class="status-area">
+      <div id="progressContainer" class="progress-container fade-in" style="display: none;">
+        <div class="progress-header">
+          <span id="progressText">Preparing...</span>
+          <span id="progressPercent">0%</span>
+        </div>
+        <div class="progress-track">
+          <div id="progressBar" class="progress-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+      <div id="status" class="status-msg success fade-in" style="animation-delay: 0.3s; opacity: 0; display: none;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <span id="statusText">Themes Extracted</span>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
