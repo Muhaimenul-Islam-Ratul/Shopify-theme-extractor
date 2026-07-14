@@ -20,7 +20,8 @@ A secure, premium Chrome Extension designed to extract **100% original** Liquid,
    ![Step 3: Turn on Developer Mode](images/step3.png)
 6. এবার বামদিকের উপরে থাকা **Load unpacked** বাটনে ক্লিক করুন।  
    ![Step 4: Click Load Unpacked](images/step4.png)
-7. একটি ফোল্ডার সিলেক্ট করার উইন্ডো আসবে। সেখান থেকে আপনার আনজিপ করা এক্সটেনশনের ফোল্ডারটি (যেখানে `manifest.json` ফাইলটি রয়েছে) সিলেক্ট করুন।  
+7. একটি ফোল্ডার সিলেক্ট করার উইন্ডো আসবে। সেখান থেকে আপনার আনজিপ করা এক্সটেনশনের ফোল্ডারটি (যেখানে `manifest.json` ফাইলটি রয়েছে) সিলেক্ট করুন:  
+   👉 ফোল্ডার পাথ: `c:\Users\Muhaimenul Islam\Downloads\shopify-theme-exporter-extension`  
    ![Step 5: Select Extension Folder](images/step5.png)
 8. ফোল্ডারটি সিলেক্ট করে **Select Folder** বাটনে ক্লিক করলেই এক্সটেনশনটি ইনস্টল হয়ে যাবে।
 9. ইনস্টল হওয়ার পর এক্সটেনশন বার থেকে **Shopify Theme Exporter** এক্সটেনশনটি **Pin** 📌 করে নিন।
