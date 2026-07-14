@@ -10,7 +10,7 @@ A secure, premium Chrome Extension designed to extract **100% original** Liquid,
 
 ### পদ্ধতি ১: ZIP ফাইল ডাউনলোড করে (সহজতম উপায়)
 
-1. এই রিপোজিটরি থেকে `shopify-theme-exporter.zip` ফাইলটি ডাউনলোড করে আপনার কম্পিউটারে আনজিপ (Extract) করুন।
+1. এই রিপোজিটরি থেকে `shopify-theme-exporter-extension.zip` ফাইলটি ডাউনলোড করে আপনার কম্পিউটারে আনজিপ (Extract) করুন।
 2. আপনার কম্পিউটারে **Google Chrome** ব্রাউজারটি ওপেন করুন।
 3. ব্রাউজারের ডানদিকের উপরে থাকা **Extensions** (🧩 পাজল আইকন) ক্লিক করুন।  
    ![Step 1: Click Extensions Icon](images/step1.png)
@@ -58,5 +58,5 @@ A secure, premium Chrome Extension designed to extract **100% original** Liquid,
 - **`popup.js`**: এক্সটেনশন পপআপের লজিক এবং ইন-ট্যাব স্ক্রিপ্ট ম্যানেজার।
 - **`content.js`**: মূল স্ক্রিপ্ট যা স্টোরের সেশন ব্যবহার করে ফাইলগুলো ডাউনলোড ও জিপ করে।
 - **`jszip.min.js`**: ফাইল কম্প্রেস করার জন্য ব্যবহৃত জাভাস্ক্রিপ্ট লাইব্রেরি।
-- **`shopify-theme-exporter.zip`**: ডিস্ট্রিবিউশন জিপ ফাইল যা দিয়ে এক্সটেনশনটি ইনস্টল করা যায়।
+- **`shopify-theme-exporter-extension.zip`**: ডিস্ট্রিবিউশন জিপ ফাইল যা দিয়ে এক্সটেনশনটি ইনস্টল করা যায়।
 - **`images/`**: সেটআপ গাইড ইলাস্ট্রেট করার জন্য ব্যবহৃত স্ক্রিনশটসমূহ।
